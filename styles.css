@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'KGStronger';
+    src: url('font/KGMakesYouStronger.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'KGStronger', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h1 {
+    font-family: 'KGStronger', sans-serif;
+    font-size: 5vw;
+    color: #92140C;
+    margin-bottom: 27px;
+}
+
+a {
+    font-family: "Chivo Mono", serif;
+    font-size: 1.7vw;
+    color: #92140C;
+    text-decoration: none;
+    border-bottom: 1px solid #92140C;
+    padding-bottom: 2px;
+    transition: .5s;
+}
+
+a:hover {
+    color: #F69586;
+    border-bottom: 1px solid #F69586;
+    transition: .5s;
+}

@@ -1,0 +1,133 @@
+@font-face {
+    font-family: 'KGStronger';
+    src: url('font/KGMakesYouStronger.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* Main Background */
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+}
+/* Adjust Background Box Width */
+.background-box {
+    width: 80%; /* Makes the content box take 60% of the screen */
+    max-width: 800px; /* Prevents it from getting too wide on large screens */
+
+    border-radius: 30px;
+    padding: 60px; /* Increases padding for better margins */
+    position: relative;
+}
+
+/* Adjust Text Width & Alignment */
+.text-content {
+    width: 100%; /* Keeps text contained within the content box */
+    font-family: 'Chivo Mono', monospace;
+    color: #663A32;
+    text-align: justify;
+    line-height: 1.7;
+    margin: 0 auto; /* Centers the text inside the content box */
+}
+
+/* Adjust Russian Text */
+.russian-text {
+    font-size: 1.4em; /* Slightly larger for readability */
+    max-width: 100%;
+}
+
+/* Adjust Title */
+h1 {
+    font-size: 3.5em; /* Adjusted to fit within the new width */
+    text-align: center;
+}
+
+/* Ensure Return Button Aligns */
+.back-button {
+    display: block;
+    width: fit-content;
+    margin: 30px auto; /* Centers the return button */
+}
+
+/* Title Styling */
+h1 {
+    font-family: 'KGStronger', sans-serif;
+    font-size: 3.75em;
+    color: #92140C;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Transition Text */
+.transition-text {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 1.2em;
+    color: #663A32;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+/* Russian Text Styling */
+.russian-text {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 1.3em;
+    color: #663A32;
+    text-align: justify;
+    line-height: 1.7;
+    max-width: 90%;
+    margin: 0 auto 15px auto;
+}
+
+/* Signature */
+.signature {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Return Button */
+.back-button {
+    font-family: 'KGStronger', sans-serif;
+    font-size: 1.8em;
+    color: #F3EAD6;
+    background-color: #F4B4A7;
+    text-decoration: none;
+    padding: 15px 70px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #F69586;
+    transform: scale(1.1);
+}
+/* Boop Button */
+.boop-button {
+    font-family: 'KGStronger', sans-serif;
+    font-size: 1.8em;
+    color: #F3EAD6;
+    background-color: #F4B4A7;
+    text-decoration: none;
+    border: none;
+    padding: 15px 70px;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    margin: 40px auto; /* Center the button */
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.boop-button:hover {
+    background-color: #F69586;
+    transform: scale(1.1);
+}

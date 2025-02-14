@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix the Ingredients</title>
+    <link rel="stylesheet" href="steps.css">
+</head>
+<body>
+
+    <div class="background-box">
+        <img src="images/hearts.png" alt="Hearts" class="heart-decoration">
+
+        <!-- Title -->
+        <h1>Cream Together</h1>
+
+        <div class="content">
+            <!-- Media Container -->
+             
+            <div class="media-wrapper">
+                <div class="media-overlay" id="mediaOverlay">
+                    <p>click to Reveal</p>
+                </div>
+                <div class="media-container">
+                    <video id="media" src="videos/step2_1.mp4" alt="Step 2 Video">
+                </div>
+            </div>
+            <!-- Text Content -->
+            <div class="text-content">
+                <p>time to blend all the best parts!</p>
+                <p>creaming together warmth, sweetness, and a puree of meticulousness&mdash;everything i get to experience</p>
+
+                <!-- Buttons -->
+                <div class="button-container">
+                    <button onclick="changeMedia('videos/step2_1.mp4')">1</button>
+                    <button onclick="changeMedia('videos/step2_2.mp4')">2</button>
+                    <button onclick="changeMedia('images/step2_3.jpg')">3</button>
+                    <a href="buttons.html" class="back-button">return!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

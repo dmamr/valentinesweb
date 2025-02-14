@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix the Ingredients</title>
+    <link rel="stylesheet" href="steps.css">
+</head>
+<body>
+
+    <div class="background-box">
+        <img src="images/hearts.png" alt="Hearts" class="heart-decoration">
+
+        <!-- Title -->
+        <h1>Sprinkle Some Love on Top</h1>
+
+        <div class="content">
+            <!-- Media Container -->
+             
+            <div class="media-wrapper">
+                <div class="media-overlay" id="mediaOverlay">
+                    <p>click to Reveal</p>
+                </div>
+                <div class="media-container">
+                    <img id="media" src="images/step6_1.jpg" alt="Step 6 Image">
+                </div>
+            </div>
+            <!-- Text Content -->
+            <div class="text-content">
+                <p>but no masterpiece is complete without the final touch!</p>
+                <p>adding a generous sprinkle of love, and laughter, and hugs, and hugs, and kisses, and kisses for my favorite human</p>
+
+                <!-- Buttons -->
+                <div class="button-container">
+                    <button onclick="changeMedia('images/step6_1.jpg')">1</button>
+                    <button onclick="changeMedia('videos/step6_2.mp4')">2</button>
+                    <button onclick="changeMedia('images/step6_3.jpg')">3</button>
+                    <button onclick="changeMedia('videos/step6_4.mp4')">4</button>
+                    <button onclick="changeMedia('images/step6_5.jpg')">5</button>
+                    <button onclick="changeMedia('images/step6_6.jpg')">6</button>
+                    <a href="buttons.html" class="back-button">return!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

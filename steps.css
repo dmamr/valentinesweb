@@ -1,0 +1,190 @@
+@font-face {
+    font-family: 'KGStronger';
+    src: url('font/KGMakesYouStronger.ttf') format('truetype'); /* Ensure the path is correct */
+}
+
+@font-face {
+    font-family: 'Chivo Mono';
+    src: url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@400;700&display=swap'); /* Use Google Fonts */
+}
+/* Main Background */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #F3EAD6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    text-align: center;
+}
+
+/* Centered Rounded Box */
+.background-box {
+    width: 90%;
+    height: 85vh; /* Adjustable */
+    background-color: #FAF7EF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+/* Decorative Hearts in the Top Right */
+.heart-decoration {
+    position: absolute;
+    top: -20px; /* Moves heart above the box */
+    right: -20px; /* Moves heart outside the box */
+    width: 120px; /* Adjust size */
+    height: auto;
+    z-index: 2; /* Ensures hearts are above the box */
+}
+
+/* Title Styling - Overlaying the Box */
+h1 {
+    font-family: 'KGStronger', sans-serif;
+    font-size: 3.75em;
+    color: #92140C;
+    position: absolute; /* Make it float over the box */
+    top: -90px; /* Move it above the box */
+    left: 50px; /* Adjust position inside the box */
+    padding: 10px 20px;
+}
+
+/* Fix Text Content Alignment */
+.text-content {
+    width: 50%;
+    font-family: 'Chivo Mono', monospace;
+    color: #333;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 40px; /* Move text slightly left */
+    padding-left: 20px; /* Keep spacing balanced */
+}
+
+/* Adjust Font Styling */
+p {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 1.2em;
+    line-height: 1.5;
+    text-align: left;
+}
+
+/* Fix Content Alignment */
+.content {
+    display: flex;
+    width: 80%;
+    align-items: center;
+    margin-left: -100px;
+    justify-content: flex-start; /* Move everything towards the left */
+}
+
+/* Media Container - Ensures Image Fills */
+.media-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Image & Video Styling */
+.media-container img,
+.media-container video {
+    width: 100%; /* Ensures full width inside container */
+    height: auto; /* Maintains aspect ratio */
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+  
+}
+
+/* Buttons Adjusted */
+.button-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 25px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* Ensures the back button aligns below */
+}
+
+/* Button Styling */
+button {
+    font-family: 'KGStronger', sans-serif;
+    font-size: 1.8em;
+    color: #F3EAD6;
+    background-color: #F4B4A7;
+    border: none;
+    padding: 15px 25px; /* Increased button padding */
+    border-radius: 20px; /* Slightly more rounded */
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background-color: #F69586;
+    transform: scale(1.15);
+}
+/* Back Button - Rectangular */
+.back-button {
+    font-family: 'KGStronger', sans-serif;
+    font-size: 1.8em;
+    color: #F3EAD6;
+    background-color: #F4B4A7;
+    text-decoration: none;
+    padding: 15px 70px; /* Twice the width of a button */
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.back-button:hover {
+    background-color: #F69586;
+    transform: scale(1.1);
+}
+
+/* Media Wrapper - Prevents Shrinking */
+.media-wrapper {
+    position: relative;
+    width: 28%; /* Ensures media stays the correct size */
+    max-height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Overlay Covering the Media */
+.media-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #F4B4A7; /* Soft pink */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2; /* Ensure it’s above the media */
+    transition: opacity 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+/* Overlay Text */
+.media-overlay p {
+    font-family: 'KGStronger', sans-serif;
+    font-size: 2em;
+    color: #92140C;
+    text-align: center;
+}
+
+/* Hide Overlay */
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

@@ -1,0 +1,144 @@
+@font-face {
+    font-family: 'KGStronger';
+    src: url('font/KGMakesYouStronger.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: url('images/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    text-align: center;
+}
+
+.buttons-container {
+    padding: 50px 20px;
+}
+
+h1 {
+    font-family: 'KGStronger', sans-serif;
+    font-size: 3.75em;
+    color: #92140C;
+    margin-bottom: 60px;
+}
+
+
+/* Initially Hide Hearts */
+.buttons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: auto;
+    opacity: 0; /* Hide hearts initially */
+    transform: scale(0.9); /* Slightly shrink */
+    transition: opacity 0.8s ease-in-out, transform 0.6s ease-in-out;
+}
+/* Show Hearts after Interaction */
+.buttons-grid.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+/* Tablet View: 2 Hearts Per Row */
+@media (max-width: 768px) {
+    .buttons-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 hearts per row */
+    }
+}
+
+/* Mobile View: 1 Heart Per Row */
+@media (max-width: 480px) {
+    .buttons-grid {
+        grid-template-columns: repeat(1, 1fr); /* 1 heart per row */
+    }
+}
+.button-item:last-child {
+    grid-column: 2; /* Moves the last heart to the center */
+}
+
+
+.button-item {
+    text-align: center;
+    opacity: 0; /* Hidden initially for animation */
+    transform: translateY(20px); /* Slight movement */
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.button-item:nth-child(1) { animation-delay: 0.2s; }
+.button-item:nth-child(2) { animation-delay: 0.4s; }
+.button-item:nth-child(3) { animation-delay: 0.6s; }
+.button-item:nth-child(4) { animation-delay: 0.8s; }
+.button-item:nth-child(5) { animation-delay: 1s; }
+.button-item:nth-child(6) { animation-delay: 1.2s; }
+.button-item:nth-child(7) { animation-delay: 1.4s; }
+
+
+.button-item img {
+    width: 200px; 
+    height: 200px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* WIGGLE ANIMATION */
+@keyframes wiggle {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-3deg); }
+    50% { transform: rotate(3deg); }
+    75% { transform: rotate(-3deg); }
+    100% { transform: rotate(0deg); }
+}
+
+/* Apply Wiggle Effect on Hover */
+.button-item img:hover {
+ 
+    animation: wiggle 0.3s ease-in-out;
+}
+
+
+.button-item p {
+    font-family: 'Chivo Mono', monospace;
+    font-size: 1.625em;
+    color: #92140C;
+    margin-top: 5px;
+}
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #F4B4A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'KGStronger', sans-serif;
+    font-size: 2em;
+    color: #92140C;
+    text-align: center;
+    cursor: pointer;
+    transition: opacity 0.5s ease;
+}
+
+#overlay.hidden {
+    opacity: 0;
+    pointer-events: none;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix the Ingredients</title>
+    <link rel="stylesheet" href="steps.css">
+</head>
+<body>
+
+    <div class="background-box">
+        <img src="images/hearts.png" alt="Hearts" class="heart-decoration">
+
+        <!-- Title -->
+        <h1>Shaping Miko hehehe</h1>
+
+        <div class="content">
+            <!-- Media Container -->
+             
+            <div class="media-wrapper">
+                <div class="media-overlay" id="mediaOverlay">
+                    <p>click to Reveal</p>
+                </div>
+                <div class="media-container">
+                    <video id="media" src="videos/step5_1.mp4" alt="Step 5 Video">
+                </div>
+            </div>
+            <!-- Text Content -->
+            <div class="text-content">
+                <p>next, we mold this dough into my most favorite person in the world - Meirzhan Mazhenov!</p>
+                <p>so smart, so thoughtful, always making me laugh. absolutely lovable.</p>
+
+                <!-- Buttons -->
+                <div class="button-container">
+                    <button onclick="changeMedia('videos/step5_1.mp4')">1</button>
+                    <button onclick="changeMedia('videos/step5_2.mp4')">2</button>
+                    <button onclick="changeMedia('videos/step5_3.mp4')">3</button>
+                    <button onclick="changeMedia('images/step5_4.jpg')">4</button>
+                    <a href="buttons.html" class="back-button">return!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

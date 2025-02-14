@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mix the Ingredients</title>
+    <link rel="stylesheet" href="steps.css">
+</head>
+<body>
+
+    <div class="background-box">
+        <img src="images/hearts.png" alt="Hearts" class="heart-decoration">
+
+        <!-- Title -->
+        <h1>Add & Beat to Combine</h1>
+
+        <div class="content">
+            <!-- Media Container -->
+             
+            <div class="media-wrapper">
+                <div class="media-overlay" id="mediaOverlay">
+                    <p>click to Reveal</p>
+                </div>
+                <div class="media-container">
+                    <video id="media" src="videos/step3_1.mp4" alt="Step 3 Video">
+                </div>
+            </div>
+            <!-- Text Content -->
+            <div class="text-content">
+                <p>a little excitement makes everything better, does it not?</p>
+                <p>we&rsquo;re adding some adventure, trust, and the occasional inside joke. now, beat it until it&rsquo;s irresistibly smooth!</p>
+
+                <!-- Buttons -->
+                <div class="button-container">
+                    <button onclick="changeMedia('videos/step3_1.mp4')">1</button>
+                    <button onclick="changeMedia('videos/step3_2.mp4')">2</button>
+                    <button onclick="changeMedia('images/step3_3.jpg')">3</button>
+                    <a href="buttons.html" class="back-button">return!</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
